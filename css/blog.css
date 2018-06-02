@@ -1,0 +1,24 @@
+form#editor{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
+
+form#editor label, form#editor input[type='text'] {
+    display:block;
+}
+
+form#editor #editor-buttons{
+    border: none;
+    text-align: right;
+}
+
+form#editor textarea, form#editor input[type='text'] {
+    width: 90%;
+    margin-bottom: 2em;
+}
+
+form#editor textarea{
+    height: 10em;
+}
