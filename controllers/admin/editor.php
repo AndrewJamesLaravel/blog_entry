@@ -6,14 +6,41 @@ $entryTable = new Blog_Entry_Table( $db );
 $editorSubmitted = isset( $_POST['action'] );
 if ( $editorSubmitted ) {
     $buttonClicked = $_POST['action'];
-    $insertNewEntry = ( $buttonClicked === 'save' );
+    $save = ( $buttonClicked === 'save' );
+    $id = $_POST['id'];
+    $insertNewEntry = ( $save and $id === '0' );
+    $deleteEntry = ( $buttonClicked === 'delete');
+    $updateEntry = ( $save and $insertNewEntry === false );
+    $title = $_POST['title'];
+    $entry = $_POST['entry'];
+
     if ( $insertNewEntry ) {
-        $title = $_POST['title'];
-        $entry = $_POST['entry'];
-        $entryTable->saveEntry( $title, $entry );
+        $savedEntryId = $entryTable->saveEntry( $title, $entry );
+    } elseif ( $updateEntry ) {
+        $entryTable->updateEntry( $id, $title, $entry );
+        //in case the entry was updated
+        //overwrite the variable with the id of the updated entry
+        $savedEntryId = $id;
+    } elseif ( $deleteEntry ) {
+        $entryTable->deleteEntry( $id );
     }
 }
 
+$entryRequested = isset( $_GET['id'] );
+if ( $entryRequested ) {
+    $id = $_GET['id'];
+    //load model of existing entry
+    $entryData = $entryTable->getEntry( $id );
+    $entryData->entry_id = $id;
+    $entryData->message = "";
+    $entryData->legend = "Edit Entry";
+}
+
+$entrySaved = isset( $savedEntryId );
+if ( $entrySaved ) {
+    $entryData = $entryTable->getEntry( $savedEntryId );
+    $entryData->message = "Entry was saved";
+}
 
 $editorOutput = include_once "views/admin/editor-html.php";
 return $editorOutput;

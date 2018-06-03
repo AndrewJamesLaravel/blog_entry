@@ -10,5 +10,6 @@ return "<!DOCTYPE html>
     
     <body>
         $pageData->content
+        $pageData->js
     </body>
 </html>";
