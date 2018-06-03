@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="61fd26d4-285c-431c-907c-ea097d651fb9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/blog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/blog.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -185,15 +183,15 @@
       <updated>1527969596440</updated>
       <workItem from="1527969597789" duration="12989000" />
       <workItem from="1527997577517" duration="8655000" />
-      <workItem from="1528063987169" duration="3841000" />
+      <workItem from="1528063987169" duration="4384000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25485000" />
+    <option name="totallyTimeSpent" value="26028000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="28" width="1368" height="741" extended-state="6" />
+    <frame x="-1" y="28" width="1368" height="741" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.18768997" />
       <window_info anchor="bottom" id="TODO" order="11" />
