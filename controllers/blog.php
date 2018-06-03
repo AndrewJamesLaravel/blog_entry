@@ -8,6 +8,7 @@ if ( $isEntryClicked ) {
     $entryId = $_GET['id'];
     $entryData = $entryTable->getEntry( $entryId );
     $blogOutput = include_once "views/entry-html.php";
+    $blogOutput .= include_once "controllers/comments.php";
 } else {
     //$entries is the PDOStatement returned from getAllEntries
     $entries = $entryTable->getAllEntries();

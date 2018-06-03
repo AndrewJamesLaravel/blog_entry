@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="61fd26d4-285c-431c-907c-ea097d651fb9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/admin/editor.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/admin/editor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/admin/entries.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/admin/entries.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/blog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Blog_Entry_Table.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Blog_Entry_Table.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Page_Data.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Page_Data.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/editor-html.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/editor-html.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/blog.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,20 +15,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="editor-html.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/admin/editor-html.php">
+      <file leaf-file-name="comment-form-html.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/comment-form-html.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+            <state relative-caret-position="240">
+              <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editor.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controllers/admin/editor.php">
+      <file leaf-file-name="comments.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/comments.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="35" column="38" lean-forward="true" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+            <state relative-caret-position="45">
+              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blog.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/blog.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blog.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/blog.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -55,7 +67,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/views/entry-html.php" />
-        <option value="$PROJECT_DIR$/controllers/blog.php" />
         <option value="$PROJECT_DIR$/views/admin/entries-html.php" />
         <option value="$PROJECT_DIR$/controllers/admin/entries.php" />
         <option value="$PROJECT_DIR$/models/Blog_Entry_Table.class.php" />
@@ -65,6 +76,10 @@
         <option value="$PROJECT_DIR$/js/editor.js" />
         <option value="$PROJECT_DIR$/views/admin/editor-html.php" />
         <option value="$PROJECT_DIR$/controllers/admin/editor.php" />
+        <option value="$PROJECT_DIR$/views/comment-form-html.php" />
+        <option value="$PROJECT_DIR$/controllers/comments.php" />
+        <option value="$PROJECT_DIR$/controllers/blog.php" />
+        <option value="$PROJECT_DIR$/css/blog.css" />
       </list>
     </option>
   </component>
@@ -106,6 +121,11 @@
               <item name="blog_entry" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog_entry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog_entry" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blog_entry" type="b2602c69:ProjectViewProjectNode" />
@@ -165,12 +185,12 @@
       <updated>1527969596440</updated>
       <workItem from="1527969597789" duration="12989000" />
       <workItem from="1527997577517" duration="8655000" />
-      <workItem from="1528063987169" duration="458000" />
+      <workItem from="1528063987169" duration="3841000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22102000" />
+    <option name="totallyTimeSpent" value="25485000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="28" width="1368" height="741" extended-state="6" />
@@ -228,13 +248,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/blog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -300,17 +313,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/admin/editor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="45" column="21" lean-forward="true" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/admin/editor-html.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="240">
           <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/admin/editor.php">
+    <entry file="file://$PROJECT_DIR$/views/comment-form-html.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="35" column="38" lean-forward="true" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+        <state relative-caret-position="240">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/comments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/blog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/blog.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
         </state>
       </provider>
     </entry>
