@@ -1,13 +1,9 @@
 <?php
 
-class Blog_Entry_Table {
+include_once "models/Table.class.php";
 
-    private  $db;
+class Blog_Entry_Table extends Table {
 
-    public function __construct( $db )
-    {
-        $this->db = $db;
-    }
 
     public function saveEntry ( $title, $entry ) {
         $entrySQL = "INSERT INTO blog_entry ( title, entry_text )
@@ -31,20 +27,6 @@ class Blog_Entry_Table {
         $statement = $this->makeStatement( $sql, $data );
         $model = $statement->fetchObject();
         return $model;
-    }
-
-    private function makeStatement ( $sql, $data = null ) {
-        //create PDOStatement object
-        $statement = $this->db->prepare( $sql );
-        try{
-            $statement->execute( $data );
-        } catch (Exception $e) {
-            $exceptionMessage = "<p>You tried to run this sql: $sql </p>
-                                <p>Exception $e</p>";
-            trigger_error( $exceptionMessage );
-        }
-        //return the PDOStatement object
-        return $statement;
     }
 
     public function deleteEntry ( $id ) {
