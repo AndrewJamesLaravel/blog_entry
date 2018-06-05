@@ -40,6 +40,7 @@ $entrySaved = isset( $savedEntryId );
 if ( $entrySaved ) {
     $entryData = $entryTable->getEntry( $savedEntryId );
     $entryData->message = "Entry was saved";
+    $entryData->legend = "Edit Entry";
 }
 
 $editorOutput = include_once "views/admin/editor-html.php";

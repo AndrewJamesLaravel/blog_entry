@@ -5,8 +5,6 @@ if ( $entryDataFound === false ) {
     trigger_error('views/entry-html.php needs an $entryData object');
 }
 
-$pageData->content .= include_once "views/user-navigation.php";
-
 //properties available in $entry: entry_id, title, entry_text, date_created
 return "<article>
     <h1>$entryData->title</h1>

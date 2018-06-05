@@ -30,9 +30,16 @@ class Blog_Entry_Table extends Table {
     }
 
     public function deleteEntry ( $id ) {
+        $this->deleteCommentsByID ( $id );
         $sql = "DELETE FROM blog_entry WHERE entry_id = ?";
         $data = array( $id );
         $statement = $this->makeStatement( $sql, $data );
+    }
+
+    private function deleteCommentsByID ( $id ) {
+        include_once "models/Comment_Table.class.php";
+        $comments = new Comment_Table( $this->db );
+        $comments->deleteByEntryId( $id );
     }
 
     public function updateEntry ( $id, $title, $entry ) {
