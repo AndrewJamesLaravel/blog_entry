@@ -6,6 +6,7 @@ if ( $idIsFound === false ) {
     trigger_error('views/comment-form-html.php needs an $entryId');
 }
 
+
 return "
 <form action='index.php?page=blog&amp;id=$entryId' method='post' id='comment-form'>
     <input type='hidden' name='entry-id' value='$entryId' />
@@ -14,4 +15,5 @@ return "
     <label>Your comment</label>
     <textarea name='new-comment'></textarea>
     <input type='submit' value='post!' />
+    <p id='comment-message'>$message</p>
 </form>";
