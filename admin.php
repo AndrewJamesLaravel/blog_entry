@@ -9,6 +9,7 @@ $pageData = new Page_Data();
 $pageData->title = "PHP/MySQL blog demo";
 $pageData->addCSS( "css/blog.css" );
 $pageData->addScript("js/editor.js");
+$pageData->addScript("js/lightbox.js");
 $pageData->content = include_once "views/admin/admin-navigation.php";
 
 $dbInfo = "mysql:host=localhost;dbname=simple_blog;charset=utf8";

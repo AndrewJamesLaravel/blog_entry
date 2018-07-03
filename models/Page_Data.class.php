@@ -10,8 +10,8 @@ class Page_Data {
         $this->css .= "<link href='$href' rel='stylesheet' />";
     }
 
-    public function addScript( $href ){
-        $this->js .= "<script src='$href'></script>";
+    public function addScript( $src ){
+        $this->js .= "<script src='$src'></script>";
     }
 
 }

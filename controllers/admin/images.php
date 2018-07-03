@@ -14,5 +14,11 @@ if ( $imageSubmitted ) {
     }
 }
 
+$deleteImage = isset( $_GET['delete-image'] );
+if ( $deleteImage ) {
+    $whichImage = $_GET['delete-image'];
+    unlink( $whichImage );
+}
+
 $imageManagerHTML = include_once  "views/admin/images-html.php";
 return $imageManagerHTML;

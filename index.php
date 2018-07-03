@@ -7,6 +7,7 @@ include_once "models/Page_Data.class.php";
 $pageData = new Page_Data();
 $pageData->title = "PHP/MySQL blog demo example";
 $pageData->addCSS("css/blog.css");
+$pageData->addScript("js/lightbox.js");
 
 $dbInfo = "mysql:host=localhost;dbname=simple_blog;charset=utf8";
 $dbUser = "root";
